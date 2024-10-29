@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121422; /* Dark background for the whole page */
+    margin: 0;
+    padding-bottom: 100px; /* Add padding to avoid content behind the fixed input */
+    color: #333; /* Dark text color for readability */
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    position: relative; /* Allows absolute positioning of input area */
+}
+
+.chat-container {
+    background-color: #121422; /* Dark background for the chat container */
+    border-radius: 10px;
+    padding: 20px;
+    height: 80vh; /* Full height */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#chat-box {
+    height: 85vh; /* Height of chat area */
+    overflow-y: auto; /* Scrollable area */
+    padding: 10px;
+    border: 1px solid #121422; /* Border around the chat box */
+    background-color: #000000bb; /* Dark background for chat box */
+}
+
+/* User and bot messages */
+.user-message {
+    background-color: #fd4800; /* Dark background for user messages */
+    /* background-color: #0e0a1f; Dark background for user messages */
+    color: #ffffff; /* White text for user messages */
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners for user messages */
+    margin: 10px 0;
+    text-align: right; /* Align user messages to the right */
+    max-width: 70%; /* Limit width*/
+
+    width: fit-content;
+    margin-left: auto; /* Push to the right */
+}
+
+.bot-message {
+    background-color: #807f7f; /* Light gray background for bot messages */
+    color: #ffffff; /* White text for bot messages */
+
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners for bot messages */
+    margin: 10px 0;
+    text-align: left; /* Align bot messages to the left */
+    max-width: 70%; /* Limit width */
+    width: fit-content;
+    margin-right: auto; /* Push to the left */
+
+}
+
+/* Input area */
+.input-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #121422; /* Dark background for input area */
+    padding: 15px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+}
+
+button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #ffffff; /* Icon color */
+    font-size: 20px; /* Icon size */
+    cursor: pointer;
+    padding: 10px; /* Padding around icons */
+}
+
+button:hover {
+    color: #0078D7; /* Change color on hover */
+}
+
+#user_input {
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff; /* Text color in input field */
+    background-color: #000000; /* Dark background for input field */
+    border: 1px solid #000000; /* Dark border around the input field */
+    border-radius: 5px; /* Slightly rounded corners */
+    width: 93%; /* Width of the input field */
+
+    margin-left: auto;
+    margin-right: auto;
+}
