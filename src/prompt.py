@@ -110,10 +110,6 @@ Occupation History:
 
 
 
-
-
-
-
 # Question7 = """
 # Occupation History:
    
@@ -132,6 +128,43 @@ Occupation History:
 #     ask me about if i have any previous jobs? 
 #        - if yes, Can you provide details about your previous jobs like What was your job title in each position?
 #        - How long did you work in each role?
+# """
+
+# Question8 = """
+# Trauma History:    
+
+# Motor Vehicle Accidents:
+#     Have you ever been involved in a motor vehicle accident?
+#     Could you specify the year it took place?
+#     What specific injuries did you sustain during the accident?
+#     Did you experience any long-term effects or require ongoing rehabilitation?
+
+# Falls:
+#     Have you ever experienced a significant fall?
+#     Can you provide the year when the fall occurred?
+#     What injuries did you sustain as a result of the fall?
+#     Did the fall cause any lingering pain or mobility issues?
+
+# Fractures:
+#     Have you ever suffered any fractures?
+#     Can you specify the year each fracture occurred?
+#     How did the fracture happen, and which part of your body was affected?
+#     Were there any complications or long-term effects from the fracture?
+
+# Significant Burns:
+#     Have you ever experienced any significant burns?
+#     what was their severity?
+#     Can you please provide the year when the burn incident occurred?
+#     How did the burns happen?
+#     Did you receive immediate medical attention or specialized burn treatment?
+#     Were there any lasting effects, such as scarring or reduced functionality?
+
+# Other Notable Injuries:
+#     Have you had any other notable injuries that were not covered above?
+#     Can you specify the year when the injury took place?
+#     What was the nature of the injury, and how did it occur?
+#     Did the injury lead to any long-term consequences or require follow-up care?
+
 # """
 
 Question8 = """
@@ -160,7 +193,6 @@ Significant Burns:
     what was their severity?
     Can you please provide the year when the burn incident occurred?
     How did the burns happen?
-    Did you receive immediate medical attention or specialized burn treatment?
     Were there any lasting effects, such as scarring or reduced functionality?
 
 Other Notable Injuries:
@@ -170,6 +202,58 @@ Other Notable Injuries:
     Did the injury lead to any long-term consequences or require follow-up care?
 
 """
+
+Question9 = """
+Allergy:
+    Do you have any known allergies?
+     - If yes: 
+        - What kind of reaction do you experience when exposed to this allergen?
+"""
+
+
+Question10 = """
+Surgical:
+    Have you had any surgeries?
+     - If yes:
+        - What was the surgery?       
+        - What was the year of the surgery?
+
+"""
+
+Question11 = """
+Family History:
+
+    "Do any health issues run in your family?"
+     - If yes:
+        - "What health issues are present in your family members?"
+        - "Which family members have these health issues?"
+        - "Is there anything else important about your family’s health?"
+     - If No: 
+        - "Is there anything important about your family’s health?"
+"""
+
+Question12 = """
+Medical History Questions:
+
+    "Do you have any long-term or chronic health conditions?"
+     - If yes:
+        - "What are the specific health conditions you have?"
+        - "When were you first diagnosed with these conditions?"
+"""
+
+Question13 = """
+Medications Questions:
+
+    "Are you currently taking any medications?"
+     - If yes:
+        - "What medications are you taking right now? Please add dose and frequency”
+        - "Is there anything else about your medications or medical history that you’d like to share?"
+"""
+
+
+
+
+
 
 
 intro="""
@@ -211,14 +295,12 @@ def get_all_message(my_info):
      Note: In all questions, ensure that my age, years provided, and past answers are mathematically consistent and logically sound.
     
        the intor is {intro}
-    1. {Question1}
-    2. {Question2}
-    3. {Question3}
-    4. {Question4}
-    5. {Question5}
-    6. {Question6}
-    7. {Question7}
-    8. {Question8}
+    1. {Question9}
+    2. {Question10}
+    3. {Question11}
+    4. {Question12}
+    5. {Question13}
+
         {end}
 
 
